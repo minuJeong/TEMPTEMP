@@ -38,7 +38,9 @@ var setTitleState = function(state) {
 }
 
 var updateContentBlockHeight = function() {
-    $('#contentblock').css('margin-top', $('#titleblock').css('height'));
+    var titleHeight_px = $('#titleblock').css('height');
+    var titleHeight = parseInt(titleHeight_px.replace("px", ""));
+    $('#contentblock').css('margin-top', (titleHeight + 10) + "px");
 }
 
 var onClickLogo = function() {
