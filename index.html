@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
     <head>
-        <link rel="stylesheet" type="text/css" href="stylesheet/base.css">
+        <link rel="stylesheet" media="screen and (min-width: 620px)" type="text/css" href="stylesheet/base.css">
+        <link rel="stylesheet" media="screen and (max-width: 620px)" type="text/css" href="stylesheet/mobile.css">
         
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -36,7 +37,7 @@
                         <input type="text" id="search_field" class="bigtitle_searchfield">
                     </form>
                     <img src="images/search_icon.png" class="responsive_image" id="search_icon">
-                    <img src="images/context_menu.png" class="resposive_image" id="contextmenu">
+                    <img src="images/context_menu.png" class="resposive_image" id="contextmenu_icon">
                 </hl>
             </div>
             <div id="contentblock" class="contentblock">
@@ -64,6 +65,14 @@
             </div>
             
             <script src="js/layout_control.js"></script>
+        </div>
+        
+        <div class="floatingbanner_left">
+            Floating Banner
+        </div>
+        
+        <div class="floatingbanner_right">
+            Floating Banner
         </div>
     </body>
 </html>
